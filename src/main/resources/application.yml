@@ -1,0 +1,16 @@
+---
+spring:
+  profiles: env-local
+
+activity:
+  poller:
+    pool:
+      size: 5
+  worker:
+    pool:
+      size: 5
+    queue:
+      softCap: 5
+  heartbeat:
+    pool:
+      size: 5
